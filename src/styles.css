@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-color: #000;
+  --primary-color: #fff;
+  --secondary-color: #09f755;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  padding: 3rem 2rem;
+}
+.text-center {
+  text-align: center;
+}
+.heading {
+  font-size: 6rem;
+}
+.xs-text {
+  font-size: 1.4rem;
+}
+.sm-text {
+  font-size: 1.8rem;
+}
+.normal-text {
+  font-size: 2.4rem;
+}
+.bold {
+  font-size: 600;
+}
+.App {
+  max-width: 700px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.genre-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  gap: 2rem;
+  list-style: none;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--secondary-color);
+}
+.genre {
+  display: inline-block;
+  margin: 3px 3px 3px 0;
+  font-family: Inconsolata, monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+.genre:active {
+  transform: translateY(-5px);
+}
+.active {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+.books-list-container {
+  display: flex;
+  min-height: 600px;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  list-style: none;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+.book-card {
+  width: 500px;
+  padding: 2rem 5rem;
+  padding-right: 2rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.book-card:hover {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+.name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.author {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #555;
+  font-weight: 600;
+}
