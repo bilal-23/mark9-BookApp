@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./components/Footer";
 import "./styles.css";
 
 const genres = {
@@ -95,9 +96,8 @@ export default function App() {
             return (
               <li
                 onClick={genreChangeHandler.bind(this, genre)}
-                className={`genre ${
-                  curGenre === genre ? "active" : "inactive"
-                }`}
+                className={`genre ${curGenre === genre ? "active" : "inactive"
+                  }`}
                 key={index}
               >
                 {genre}
@@ -118,7 +118,7 @@ export default function App() {
           })}
         </ul>
       </div>
-      <footer>Developed by Bilal</footer>
+      <Footer />
     </>
   );
 }
