@@ -1,5 +1,5 @@
-# Good Food, Good Mood!
-Description : An app which with list of famous dishes and their ingredients for world's 3 best Cuisines, Indian, Chinese and Italian.
+# Books App
+Description : An app to view famous books of different genres.
 
 Tech Stack : ReactJS
 
