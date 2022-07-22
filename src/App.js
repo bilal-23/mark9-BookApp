@@ -6,19 +6,23 @@ const genres = {
   "Science Fiction": [
     {
       name: "Dune",
-      author: "Frank Herbert"
+      author: "Frank Herbert",
+      // image: "https://ik.imagekit.io/ns2swkphi/default-image.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655383872257"
     },
     {
       name: "Ender's Game (Ender's Saga)",
-      author: "Orson Scott Card"
+      author: "Orson Scott Card",
+      image: "Ender'sGame.jpg"
     },
     {
       name: "1984",
-      author: "George Orwell"
+      author: "George Orwell",
+      image: "1984.jpeg"
     },
     {
       name: "Fahrenheit 451",
-      author: "Ray Bradbury"
+      author: "Ray Bradbury",
+      image: "Fahrenheit451.jpg"
     }
   ],
   Fiction: [
@@ -110,6 +114,7 @@ export default function App() {
             return (
               <>
                 <li className="book-card">
+                  {/* <image src={item.im} alt={item.name} className="image" /> */}
                   <p className="name">{item.name}</p>
                   <p className="author">by {item.author}</p>
                 </li>
